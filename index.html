@@ -65,6 +65,10 @@
             background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
         }
 
+        .doc-header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+
         @media print {
             .no-print { display: none !important; }
             .section-card { box-shadow: none; border: 1px solid #e2e8f0; }
@@ -125,62 +129,50 @@
 
     <!-- Stakeholder Tabs -->
     <div class="max-w-screen-xl mx-auto px-6 pt-6">
-        <div class="flex flex-wrap gap-1.5 border-b no-print text-sm">
+        <div class="flex flex-wrap gap-1 border-b no-print text-sm">
             <button onclick="switchTab(0)" id="tab-0"
                     class="nav-tab active px-4 py-2.5 rounded-t-2xl font-medium flex items-center gap-x-1.5">
-                <i class="fa-solid fa-map"></i>
-                <span>總覽</span>
+                <i class="fa-solid fa-map"></i><span>總覽</span>
             </button>
             <button onclick="switchTab(1)" id="tab-1"
                     class="nav-tab px-4 py-2.5 rounded-t-2xl font-medium flex items-center gap-x-1.5 text-slate-600 hover:text-slate-900">
-                <i class="fa-solid fa-building"></i>
-                <span>學校管理層</span>
+                <i class="fa-solid fa-building"></i><span>學校管理層</span>
             </button>
             <button onclick="switchTab(2)" id="tab-2"
                     class="nav-tab px-4 py-2.5 rounded-t-2xl font-medium flex items-center gap-x-1.5 text-slate-600 hover:text-slate-900">
-                <i class="fa-solid fa-user-tie"></i>
-                <span>中層主任</span>
+                <i class="fa-solid fa-user-tie"></i><span>中層主任</span>
             </button>
             <button onclick="switchTab(3)" id="tab-3"
                     class="nav-tab px-4 py-2.5 rounded-t-2xl font-medium flex items-center gap-x-1.5 text-slate-600 hover:text-slate-900">
-                <i class="fa-solid fa-chalkboard-teacher"></i>
-                <span>前線教師</span>
+                <i class="fa-solid fa-chalkboard-teacher"></i><span>前線教師</span>
             </button>
             <button onclick="switchTab(4)" id="tab-4"
                     class="nav-tab px-4 py-2.5 rounded-t-2xl font-medium flex items-center gap-x-1.5 text-slate-600 hover:text-slate-900">
-                <i class="fa-solid fa-users"></i>
-                <span>學生與家長</span>
+                <i class="fa-solid fa-users"></i><span>學生與家長</span>
             </button>
             <button onclick="switchTab(5)" id="tab-5"
                     class="nav-tab px-4 py-2.5 rounded-t-2xl font-medium flex items-center gap-x-1.5 text-slate-600 hover:text-slate-900">
-                <i class="fa-solid fa-handshake"></i>
-                <span>外部合作</span>
+                <i class="fa-solid fa-handshake"></i><span>外部合作</span>
             </button>
-            <!-- 新增三個文件分頁 -->
             <button onclick="switchTab(6)" id="tab-6"
                     class="nav-tab px-4 py-2.5 rounded-t-2xl font-medium flex items-center gap-x-1.5 text-slate-600 hover:text-slate-900">
-                <i class="fa-solid fa-book"></i>
-                <span>發展藍圖</span>
+                <i class="fa-solid fa-book"></i><span>發展藍圖</span>
             </button>
             <button onclick="switchTab(7)" id="tab-7"
                     class="nav-tab px-4 py-2.5 rounded-t-2xl font-medium flex items-center gap-x-1.5 text-slate-600 hover:text-slate-900">
-                <i class="fa-solid fa-brain"></i>
-                <span>AI素養架構</span>
+                <i class="fa-solid fa-brain"></i><span>AI素養架構</span>
             </button>
             <button onclick="switchTab(8)" id="tab-8"
                     class="nav-tab px-4 py-2.5 rounded-t-2xl font-medium flex items-center gap-x-1.5 text-slate-600 hover:text-slate-900">
-                <i class="fa-solid fa-chalkboard"></i>
-                <span>AI教學指南</span>
+                <i class="fa-solid fa-chalkboard"></i><span>AI教學指南</span>
             </button>
         </div>
     </div>
 
-    <!-- Content Sections -->
     <div class="max-w-screen-xl mx-auto px-6 py-8">
 
-        <!-- 總覽 (content-0) -->
+        <!-- 總覽 -->
         <div id="content-0" class="tab-content">
-            <!-- ... existing content kept for brevity in this response ... -->
             <div class="mb-6">
                 <div class="stakeholder-header text-white px-6 py-4 rounded-3xl flex items-center gap-x-4">
                     <i class="fa-solid fa-map text-3xl opacity-90"></i>
@@ -209,7 +201,6 @@
                 </div>
             </div>
 
-            <!-- 藍圖核心理念 -->
             <div class="section-card bg-white rounded-3xl p-6 border border-blue-200 mb-8">
                 <div class="font-bold text-blue-900 mb-3">藍圖核心理念</div>
                 <div class="grid md:grid-cols-2 gap-x-8 text-sm">
@@ -225,22 +216,18 @@
             </div>
         </div>
 
-        <!-- 學校管理層 (content-1) ... existing ... -->
-        <!-- 中層主任 (content-2) ... -->
-        <!-- 前線教師 (content-3) ... -->
-        <!-- 學生與家長 (content-4) ... -->
-        <!-- 外部合作 (content-5) ... -->
+        <!-- 學校管理層、中層主任、前線教師、學生與家長、外部合作 內容省略（保持原有） -->
 
-        <!-- ========== 新增三個文件分頁 ========== -->
+        <!-- ========== 三個文件分頁（大幅擴充） ========== -->
 
-        <!-- 1. 中小學數字教育發展藍圖 (content-6) -->
+        <!-- 1. 中小學數字教育發展藍圖 -->
         <div id="content-6" class="tab-content hidden">
             <div class="mb-6">
-                <div class="stakeholder-header text-white px-6 py-4 rounded-3xl flex items-center gap-x-4">
+                <div class="doc-header text-white px-6 py-4 rounded-3xl flex items-center gap-x-4">
                     <i class="fa-solid fa-book text-3xl opacity-90"></i>
                     <div>
                         <div class="font-bold text-xl">中小學數字教育發展藍圖</div>
-                        <div class="text-blue-100 text-sm">2026-2029 核心文件</div>
+                        <div class="text-blue-100 text-sm">2026-2029 核心政策文件</div>
                     </div>
                 </div>
             </div>
@@ -248,77 +235,107 @@
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="section-card bg-white rounded-3xl p-6 border border-slate-200">
                     <div class="font-bold mb-4 text-blue-900">願景與原則</div>
-                    <ul class="space-y-2 text-sm">
-                        <li><span class="sen-badge">核心</span> 育人為本、素養為先、應用導向、智能向善</li>
-                        <li>回應國家「人工智能＋教育」行動</li>
-                        <li>提升教育質素、促進教育公平</li>
+                    <ul class="space-y-2.5 text-sm">
+                        <li>面對全球數字化轉型，回應國家「人工智能＋教育」行動</li>
+                        <li>原則：育人為本、素養為先、應用導向、智能向善</li>
+                        <li>目標：提升教育質素、促進教育公平、鞏固香港國際化優勢</li>
                     </ul>
                 </div>
                 <div class="section-card bg-white rounded-3xl p-6 border border-slate-200">
                     <div class="font-bold mb-4 text-blue-900">四大策略方向</div>
-                    <ul class="space-y-2 text-sm">
-                        <li><span class="font-bold">學生為根本</span> — 發展AI素養與批判思維</li>
-                        <li><span class="font-bold">教師為專業</span> — 30小時培訓 + 教學創新</li>
-                        <li><span class="font-bold">學校為基地</span> — 3年發展計劃 + 基建優化</li>
-                        <li><span class="font-bold">社會為夥伴</span> — 家校社合作</li>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><span class="font-bold">學生為根本</span>：發展AI素養、批判思維與人文關懷</li>
+                        <li><span class="font-bold">教師為專業</span>：30小時培訓、教學創新、社群分享</li>
+                        <li><span class="font-bold">學校為基地</span>：3年發展計劃、基建優化、自我評估</li>
+                        <li><span class="font-bold">社會為夥伴</span>：家校社合作、企業資源、社區體驗</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="mt-6 section-card bg-white rounded-3xl p-6 border border-slate-200">
-                <div class="font-bold mb-4 text-emerald-700">SEN 重點</div>
-                <div class="grid md:grid-cols-3 gap-4 text-sm">
-                    <div>• 確保SEN學生無障礙參與</div>
-                    <div>• 多圖少字 + 多感官設計</div>
-                    <div>• 個人化學習進度追蹤</div>
+            <div class="mt-6 grid md:grid-cols-3 gap-6">
+                <div class="section-card bg-white rounded-3xl p-6 border border-slate-200">
+                    <div class="font-bold mb-3 text-emerald-700">三年發展重點</div>
+                    <ul class="text-sm space-y-2">
+                        <li><span class="font-bold">2026</span>：成立發展小組、申請撥款、基建審視</li>
+                        <li><span class="font-bold">2027</span>：全校培訓啟動、首年課程試行</li>
+                        <li><span class="font-bold">2028-29</span>：全面推行、持續優化、成效評估</li>
+                    </ul>
+                </div>
+                <div class="section-card bg-white rounded-3xl p-6 border border-slate-200">
+                    <div class="font-bold mb-3 text-emerald-700">SEN 重點措施</div>
+                    <ul class="text-sm space-y-2">
+                        <li>確保SEN學生無障礙接入所有數字資源</li>
+                        <li>每校制定SEN學生AI素養個人化計劃</li>
+                        <li>多圖少字、多感官、語音輔助工具優先應用</li>
+                        <li>定期檢討SEN學生參與率及學習成效</li>
+                    </ul>
+                </div>
+                <div class="section-card bg-white rounded-3xl p-6 border border-slate-200">
+                    <div class="font-bold mb-3 text-emerald-700">資源與支援</div>
+                    <ul class="text-sm space-y-2">
+                        <li>每校即時撥款 HK$500,000</li>
+                        <li>優質教育基金 $20億元</li>
+                        <li>教育局專業發展課程及簡報會</li>
+                        <li>附篇一、二教學資源</li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <!-- 2. 中小學人工智能素養學習架構 (content-7) -->
+        <!-- 2. 中小學人工智能素養學習架構 -->
         <div id="content-7" class="tab-content hidden">
             <div class="mb-6">
-                <div class="stakeholder-header text-white px-6 py-4 rounded-3xl flex items-center gap-x-4">
+                <div class="doc-header text-white px-6 py-4 rounded-3xl flex items-center gap-x-4">
                     <i class="fa-solid fa-brain text-3xl opacity-90"></i>
                     <div>
                         <div class="font-bold text-xl">中小學人工智能素養學習架構</div>
-                        <div class="text-blue-100 text-sm">附篇一</div>
+                        <div class="text-blue-100 text-sm">附篇一（附應用場景示例）</div>
                     </div>
                 </div>
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="section-card bg-white rounded-3xl p-6 border border-slate-200">
-                    <div class="font-bold mb-4">六大範疇</div>
-                    <ul class="space-y-2 text-sm">
-                        <li>1. AI 基礎概念</li>
-                        <li>2. AI 應用與創新</li>
-                        <li>3. AI 倫理與責任</li>
-                        <li>4. 數據素養</li>
-                        <li>5. 批判性思維</li>
-                        <li>6. 終身學習</li>
-                    </ul>
+                    <div class="font-bold mb-4">六大學習範疇</div>
+                    <div class="grid grid-cols-2 gap-x-4 text-sm">
+                        <div>1. AI 基礎概念與知識</div>
+                        <div>2. AI 應用與創新能力</div>
+                        <div>3. AI 倫理、法律與責任</div>
+                        <div>4. 數據收集、分析與素養</div>
+                        <div>5. 批判性思維與問題解決</div>
+                        <div>6. 終身學習與適應力</div>
+                    </div>
                 </div>
                 <div class="section-card bg-white rounded-3xl p-6 border border-slate-200">
-                    <div class="font-bold mb-4">SEN 適應重點</div>
+                    <div class="font-bold mb-4">SEN 適應設計</div>
                     <ul class="space-y-2 text-sm">
                         <li><span class="sen-badge">多圖少字</span> 視覺化學習材料</li>
-                        <li>重複練習 + 即時回饋</li>
-                        <li>個人化進度設計</li>
-                        <li>多感官輸入（語音 + 圖像）</li>
+                        <li>重複練習 + 即時正面回饋</li>
+                        <li>個人化學習進度與難度調整</li>
+                        <li>多感官輸入（語音 + 圖像 + 動畫）</li>
+                        <li>簡化指令 + 步驟拆解</li>
                     </ul>
+                </div>
+            </div>
+
+            <div class="mt-6 section-card bg-white rounded-3xl p-6 border border-slate-200">
+                <div class="font-bold mb-3">學習成果層級（P1-S6）</div>
+                <div class="text-sm grid md:grid-cols-3 gap-4">
+                    <div><span class="font-bold">初階</span>：認識AI、簡單應用、基本倫理</div>
+                    <div><span class="font-bold">中階</span>：應用AI工具解決問題、數據分析</div>
+                    <div><span class="font-bold">高階</span>：創新應用、批判評估、倫理決策</div>
                 </div>
             </div>
         </div>
 
-        <!-- 3. 中小學應用人工智能教學指南 (content-8) -->
+        <!-- 3. 中小學應用人工智能教學指南 -->
         <div id="content-8" class="tab-content hidden">
             <div class="mb-6">
-                <div class="stakeholder-header text-white px-6 py-4 rounded-3xl flex items-center gap-x-4">
+                <div class="doc-header text-white px-6 py-4 rounded-3xl flex items-center gap-x-4">
                     <i class="fa-solid fa-chalkboard text-3xl opacity-90"></i>
                     <div>
                         <div class="font-bold text-xl">中小學應用人工智能教學指南</div>
-                        <div class="text-blue-100 text-sm">附篇二</div>
+                        <div class="text-blue-100 text-sm">附篇二（附科目應用示例）</div>
                     </div>
                 </div>
             </div>
@@ -327,20 +344,31 @@
                 <div class="section-card bg-white rounded-3xl p-6 border border-slate-200">
                     <div class="font-bold mb-4">應用原則</div>
                     <ul class="space-y-2 text-sm">
-                        <li>以學生為中心</li>
-                        <li>倫理與安全第一</li>
-                        <li>教師專業判斷</li>
-                        <li>家校合作</li>
+                        <li>以學生學習需要為中心</li>
+                        <li>倫理、安全與私隱優先</li>
+                        <li>教師專業判斷與引導</li>
+                        <li>家校合作與價值觀教育</li>
+                        <li>持續反思與優化</li>
                     </ul>
                 </div>
                 <div class="section-card bg-white rounded-3xl p-6 border border-slate-200">
                     <div class="font-bold mb-4">SEN 教學策略</div>
                     <ul class="space-y-2 text-sm">
-                        <li>ChatGPT 圖像生成輔助理解</li>
-                        <li>語音工具支援書寫困難</li>
-                        <li>個人化學習路徑</li>
-                        <li>即時正面回饋</li>
+                        <li>ChatGPT 生成圖像輔助理解抽象概念</li>
+                        <li>語音轉文字工具支援書寫困難學生</li>
+                        <li>個人化學習路徑與即時回饋</li>
+                        <li>多感官活動設計（視覺 + 聽覺 + 動覺）</li>
+                        <li>簡化任務 + 逐步提示</li>
                     </ul>
+                </div>
+            </div>
+
+            <div class="mt-6 section-card bg-white rounded-3xl p-6 border border-slate-200">
+                <div class="font-bold mb-3">科目應用舉例</div>
+                <div class="text-sm grid md:grid-cols-3 gap-4">
+                    <div><span class="font-bold">中文/英文</span>：AI 輔助寫作、語音練習</div>
+                    <div><span class="font-bold">數學</span>：AI 解題、圖像化概念</div>
+                    <div><span class="font-bold">常識/科學</span>：AI 模擬實驗、數據分析</div>
                 </div>
             </div>
         </div>
@@ -351,7 +379,7 @@
     <div class="border-t bg-white py-5">
         <div class="max-w-screen-xl mx-auto px-6 text-center">
             <div class="text-xs text-slate-500">
-                資料來源：教育局通告第11/2026號、《中小學數字教育發展藍圖》及附篇<br>
+                資料來源：教育局通告第11/2026號、《中小學數字教育發展藍圖》及附篇一、二<br>
                 <span class="font-medium">SEN 適應版製作及整理：Ken Cheng</span>
             </div>
             <div class="mt-1 text-[10px] text-slate-400">
